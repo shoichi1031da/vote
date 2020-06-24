@@ -6,13 +6,20 @@
 <link rel="stylesheet" media="(max-width: 640px)" href="style_mobile.css">
 </head>
 パスワード4桁<input id="password" maxlength="4"><br>
-<button id="btn">送信</button>
+<button id="btn">送信</button><br>
+<form name="miss">
+    <input type="text" size="200" name="passwordMiss" style="color:red;border-style:none;background-color:white;">
+</form>
 <script>
+    let miss = 0;
     btn.onclick = ()　=>　{
     if(password.value == 1252){
         window.location.href = 'https://www.menti.com/b9ovm6mp4e';
     }
-    else alert("パスワードが違います!!!!");
+    else {
+        //alert("パスワードが違います!!!!");
+        document.miss.passwordMiss.value = "※パスワードが間違っています";
+     } 
     }
     
 </script>
