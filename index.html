@@ -1,31 +1,27 @@
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" media="(min-width: 640px)" href="style_pc.css">
-<link rel="stylesheet" media="(max-width: 360px)" href="style_mobile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" media="(min-width: 640px)" href="style_pc.css">
+    <link rel="stylesheet" media="(max-width: 360px)" href="style_mobile.css">
 </head>
 <div class="container">
 パスワード(4桁) <input id="password" class="box" maxlength="4">
 <button id="btn">送信</button>
 </div>
-<!-- <form name="miss">
-    <input type="text" size="30" name="passwordMiss" style="color:red;border-style:none;background-color:white;">
-</form> -->
+
 <div id="output" style="color:red;"></div>
-<script>
-    //let miss = 0;
-    let target = document.getElementById("output");
-    btn.onclick = ()　=>　{
-    if(password.value == 1252){
-        window.location.href = 'https://www.menti.com/b9ovm6mp4e';
-    }
-    else {
-        //alert("パスワードが違います!!!!");
-        //document.miss.passwordMiss.value = "※パスワードが間違っています";
-        target.innerHTML = "※パスワードが間違っています";
-     } 
-    }
-    
-</script>
+
+    <script>
+        let target = document.getElementById("output");
+        btn.onclick = ()　=>　{
+            if(password.value == 1252){
+            window.location.href = 'https://www.menti.com/b9ovm6mp4e';
+            }
+            else {
+            target.innerHTML = "※パスワードが間違っています";
+            }   
+        }
+    </script>
+
 </html>
